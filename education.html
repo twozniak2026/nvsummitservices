@@ -375,7 +375,8 @@
                     </div>
                     <h3 id="november-education-materials">Education Materials</h3>
                     <p>Review topics and presentation resources from the November 2026 summit, including Nevada HOA laws, board responsibilities, collections, reserve planning and wildfire readiness.</p>
-                    <p><a class="btn btn-primary event-download" href="thankful-for-community-education.html">View November 2026 Education Materials</a></p>
+                    <p><a class="btn btn-primary event-download" id="november-education-pdf" href="assets/presentations/november-2026-education.pdf" download style="display:none">Download November 2026 Education PDF (33 pages)</a> <a href="thankful-for-community-education.html" style="color:#07546b;text-decoration:underline">View education topics</a></p>
+                    <script>fetch("assets/presentations/november-2026-education.pdf",{method:"HEAD"}).then(r=>{if(r.ok)document.getElementById("november-education-pdf").style.display="inline-block"}).catch(()=>{});</script>
                     <p style="font-size:.9em">Educational materials are provided for general information and are not legal advice.</p>
                 </section>
 
